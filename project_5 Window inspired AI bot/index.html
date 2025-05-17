@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+    <div id="display">
+        <div class="disApps">
+            <figure>
+                <img src="./images/cmd.png" alt="command prompt" id="krisAiIcon">
+                <figcaption style="margin-top: 10px;" id="krisAi">
+                    KrisAi
+                </figcaption>
+                <div id="krisAiWindow" class="window hiddenKrisAi">
+                    <div class="window-header">
+                        <span>KrisAi Terminal</span>
+                        <div class="headButtons">
+                            <button id="miniKrisAiBtn" style="font-weight: 800;">━</button>
+                            <button id="fullKrisAiBtn"><i class="fa-solid fa-window-maximize"
+                                    style="color: #ffffff;"></i></button>
+                            <button id="closeKrisAiBtn"><i class="fa-solid fa-xmark"
+                                    style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+                    <div class="window-content"
+                        style="display: flex; align-items:end; text-align:start; flex-direction:column; justify-content:end;">
+                        <div class="license" style="align-self:start;">Krish's Windows [Version 17.5.2025] <br>
+                            Developed and Designed By Krish Parate. All rights Reserved.</div>
+                        <div style="display: flex; gap: 10px; margin-top: 10px; align-items: center;">
+                            <div id="krisAiOutput"
+                                style="white-space: pre-wrap; margin-bottom: 20px; height:100%; display:flex; width:800%;flex-direction:column;">
+                            </div>
+                            <input type="text" id="krisAiInput" placeholder="Ask KrisAi..."
+                                style="flex: 1; padding: 8px; width:80%; font-size: 20px; border: none; border-radius: 4px; overflow-X:none;" />
+                            <button id="krisAiSendBtn"
+                                style="padding: 8px 16px; font-size: 18px; background-color: #00ff00; color: #000; border: none; border-radius: 4px; cursor: pointer;">
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="startMenu" class="hidden">
+            <div class="startMenusearchBar">
+                <input type="text" placeholder="Search for apps, setting, and documents" />
+            </div>
+        </div>
+    </div>
+    <div id="taskbar">
+        <div class="taskLeft">
+            <i class="fa-solid fa-cloud"></i>
+            <div id="weather">
+                <p class="weatherClear">Mostly Clear</p>
+            </div>
+        </div>
+        <div class="taskCenter">
+            <p id="Note">Toogle Win: <span id="winButtonShort">alt+w</span></p>
+            <button id="startButton"></button>
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Type here to search..." />
+            </div>
+            <div class="taskIco">
+                <button><img src="./images/taskview.png" alt="taskview" class="taskIcons"></button>
+                <button><img src="./images/fileexplorer.png" alt="fileex" class="taskIcons"></button>
+                <button><img src="./images/chrome.png" alt="chrome" class="taskIcons"></button>
+                <button><img src="./images/vscode.png" alt="vscode" class="taskIcons"></button>
+                <button><img src="./images/ps.png" alt="photoshop" class="taskIcons"></button>
+                <button><img src="./images/ae.png" alt="aftereffects" class="taskIcons"></button>
+                <button><img src="./images/illustrator.png" alt="illustrator" class="taskIcons"></button>
+                <button id="krisAiTaskbarBtn">
+                    <img src="./images/cmd.png" alt="cmd" class="taskIcons">
+                </button>
+                <button><img src="./images/blender.png" alt="cmd" class="taskIcons"></button>
+            </div>
+        </div>
+        <div class="taskRight">
+            <div id="quickSetting">
+
+            </div>
+            <div class="dateTime">
+                <div id="dateTime"></div>
+                <img src="./images/notification.png" alt="notify" id="notify">
+            </div>
+        </div>
+    </div>
+    <script src="./script1.js"></script>
+    <script src="./script2.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
