@@ -1,4 +1,4 @@
-const geminiApiKey = "AIzaSyD7ruZNqefplm_nXnos9xq-TTjK2ekcCRE";
+const geminiApiKey = "apiKeyj";
 const krisAiInput = document.getElementById("krisAiInput");
 const krisAiOutput = document.getElementById("krisAiOutput");
 
